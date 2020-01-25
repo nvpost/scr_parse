@@ -50,7 +50,7 @@ class OwenSpider(scrapy.Spider):
                     'category_url': url_list[i],
                     'product_label': product_title_list[prod],
                     'product_price': product_price_list[prod],
-                    'product_img': imgs_list[prod]
+                    'image_urls': [imgs_list[prod]]
                 }
                 category_row.append(row)
                 yield row
